@@ -1,101 +1,118 @@
-# Website Folder
+# Website Template - App Landing Page
 
-This folder contains ready-to-deploy HTML files for your app's website.
+This template provides a modern, purple gradient design for app landing pages with privacy policy and terms of use.
 
-## 📄 Files Included
+## Files Included
+- `index.html` - Main landing page
+- `policy.html` - Privacy Policy page
+- `terms.html` - Terms of Use page
 
-- **index.html** - Landing page with app description and links
-- **policy.html** - Privacy Policy (required for App Store submission)
-- **terms.html** - Terms of Use (required for App Store submission)
-- **icon.png** - Your app icon (add this file - 512x512px or 1024x1024px recommended)
+## How to Use
 
-## ✏️ Customization Checklist
+Replace all placeholders (marked with `{{PLACEHOLDER_NAME}}`) with your app-specific information.
 
-Before deploying, update the following in all three HTML files:
+### Index.html Placeholders
 
-### In All Files:
-- [ ] Replace "Your App Name" with your actual app name
-- [ ] Add your app icon as `icon.png` (512x512px or larger)
-- [ ] Update App Store/Play Store links (currently commented out)
+| Placeholder | Description | Example |
+|------------|-------------|---------|
+| `{{APP_NAME}}` | Your app name | "LearnIntel" |
+| `{{APP_SUBTITLE}}` | Brief app category/type | "AI Learning App" |
+| `{{APP_DESCRIPTION}}` | Short description for meta tag | "Your AI-powered companion for smarter, personalized learning." |
+| `{{APP_TAGLINE}}` | Hero section tagline | "AI-Powered Personalized Learning" |
+| `{{APP_STORE_LINK}}` | Full App Store URL | "https://apps.apple.com/us/app/learnintel/id6754045333" |
+| `{{LOCALE}}` | App Store badge locale | "en-us" or "de-de" |
+| `{{PRICE}}` | Display price with currency | "€4.99" or "€10" |
+| `{{MAIN_HEADING}}` | Main content heading | "Learn Smarter, Not Harder" |
+| `{{MAIN_DESCRIPTION}}` | Main content paragraph | Your full description text |
+| `{{YEAR}}` | Copyright year | "2026" |
 
-### In index.html:
-- [ ] Update the app description
-- [ ] Uncomment and add App Store badge link when available
+#### Feature Placeholders (6 features)
+For each feature (1-6), replace:
+- `{{FEATURE_X_ICON}}` - Emoji or icon (e.g., "🤖", "📚", "🎯")
+- `{{FEATURE_X_TITLE}}` - Feature title (e.g., "AI Course Generation")
+- `{{FEATURE_X_DESCRIPTION}}` - Feature description
 
-### In policy.html:
-- [ ] Update effective date
-- [ ] Update pricing (currently €4.99)
-- [ ] Add your contact information:
-  - Email address
-  - Physical address
-  - Phone number
-- [ ] Update copyright year and company name
+### Policy.html Placeholders
 
-### In terms.html:
-- [ ] Update effective date
-- [ ] Update pricing (currently €4.99)
-- [ ] Add your contact information
-- [ ] Update governing law jurisdiction
-- [ ] Update copyright year and company name
-- [ ] Customize sections based on your app's specific features
+| Placeholder | Description | Example |
+|------------|-------------|---------|
+| `{{APP_NAME}}` | Your app name | "LearnIntel" |
+| `{{APP_SUBTITLE}}` | Brief app category/type | "AI Learning App" |
+| `{{EFFECTIVE_DATE}}` | Policy effective date | "January 17, 2026" |
+| `{{APP_SERVICE_TYPE}}` | Type of service | "AI-powered learning" |
+| `{{APP_EXPERIENCE}}` | User experience type | "learning" or "quiz" |
+| `{{PRICE_NUMBER}}` | Price number only | "10 EUR" or "4.99 EUR" |
+| `{{APP_CORE_FEATURES}}` | Core feature description | "AI course generation" |
+| `{{PURCHASE_GUARANTEE_SECTION}}` | Optional: " and Generation Guarantee" or leave empty |
+| `{{GUARANTEE_LIST_ITEM}}` | Optional: Add guarantee item or leave empty |
+| `{{USER_RIGHTS_ADDITIONAL}}` | Optional: Add extra user rights or leave empty |
+| `{{POLICY_CHANGE_ADDITIONAL}}` | Optional: Add additional change items or leave empty |
+| `{{CONTACT_EMAIL}}` | Support email | "mail@ahmousavi.com" |
+| `{{CONTACT_ADDRESS}}` | Business address | "Hauptstr. 4, 61276 Weilrod, Germany" |
+| `{{CONTACT_PHONE}}` | Contact phone | "+49 15753674255" |
+| `{{YEAR}}` | Copyright year | "2026" |
 
-## 🌐 Deployment Options
+### Terms.html Placeholders
 
-### GitHub Pages
-1. Push this folder to a GitHub repository
-2. Go to Settings → Pages
-3. Select branch and `/Website` folder
-4. Your site will be at `https://username.github.io/repo-name/`
+| Placeholder | Description | Example |
+|------------|-------------|---------|
+| `{{APP_NAME}}` | Your app name | "LearnIntel" |
+| `{{APP_SUBTITLE}}` | Brief app category/type | "AI Learning App" |
+| `{{EFFECTIVE_DATE}}` | Terms effective date | "January 17, 2026" |
+| `{{PRICE_NUMBER}}` | Price number only | "10 EUR" |
+| `{{APP_CORE_FEATURES}}` | Core feature description | "AI learning and course generation" |
+| `{{GUARANTEE_LIST_ITEM}}` | Optional: Add guarantee list item or leave empty |
+| `{{GUARANTEE_SECTION}}` | Optional: Full guarantee section HTML or leave empty |
+| `{{LIFETIME_ACCESS_SECTION}}` | Optional: Full lifetime access section HTML or leave empty |
+| `{{AI_CONTENT_SECTION}}` | Optional: AI-generated content section or leave empty |
+| `{{PRIVACY_POLICY_LINK}}` | Link to privacy policy | "https://learnintel.ahmousavi.com/policy" |
+| `{{EDUCATIONAL_CONTENT_SECTION}}` | Optional: Educational content disclaimer or leave empty |
+| `{{GUARANTEE_LIABILITY_SECTION}}` | Optional: Guarantee liability text or leave empty |
+| `{{TERMINATION_GUARANTEE_SECTION}}` | Optional: Termination guarantee text or leave empty |
+| `{{TERMS_CHANGE_GUARANTEE_SECTION}}` | Optional: Terms change guarantee text or leave empty |
+| `{{JURISDICTION}}` | Governing law jurisdiction | "the European Union and Germany" |
+| `{{JURISDICTION_COURTS}}` | Court jurisdiction | "German courts for EU users" |
+| `{{CONTACT_EMAIL}}` | Support email | "mail@ahmousavi.com" |
+| `{{CONTACT_ADDRESS}}` | Business address | "Hauptstr. 4, 61276 Weilrod, Germany" |
+| `{{CONTACT_PHONE}}` | Contact phone | "+49 15753674255" |
+| `{{CLOSING_MESSAGE}}` | Final thank you message | "We're committed to providing you with the best AI-powered learning experience." |
+| `{{YEAR}}` | Copyright year | "2026" |
 
-### Netlify
-1. Connect your repository to Netlify
-2. Set build command: (none needed for static HTML)
-3. Set publish directory: `Website`
-4. Deploy
+## Optional Sections
 
-### Vercel
-1. Import your repository
-2. Set framework preset to "Other"
-3. Set output directory to `Website`
-4. Deploy
+Some placeholders are for optional sections. If your app doesn't need them (e.g., no generation guarantee), simply remove the entire placeholder including any surrounding HTML.
 
-### Custom Domain
-After deploying to any platform above, you can:
-1. Purchase a domain from a registrar
-2. Add custom domain in hosting platform settings
-3. Update DNS records as instructed
+### Example Optional Section Replacements
 
-## 📱 App Store Requirements
+**For apps WITH generation guarantee:**
+```
+{{GUARANTEE_LIST_ITEM}} = <li>A <strong>guarantee of at least 30 successful course generations</strong> following your purchase</li>
+```
 
-Both Apple App Store and Google Play Store require:
-- ✅ Privacy Policy URL
-- ✅ Terms of Use URL (Apple requires this)
-- ✅ Support URL (can be same as landing page)
+**For apps WITHOUT generation guarantee:**
+```
+{{GUARANTEE_LIST_ITEM}} = <!-- Leave empty or remove -->
+```
 
-Make sure to deploy these pages BEFORE submitting your app for review.
+## Design Customization
 
-## 🎨 Design Notes
+The template uses a purple gradient theme by default:
+- Primary color: `#667eea`
+- Secondary color: `#764ba2`
 
-The website uses:
-- Responsive design (mobile-friendly)
-- System fonts for fast loading
-- Clean, professional styling matching your app's theme
-- Purple accent color (#3498db) - matches app primary color
-- Shadow effects and rounded corners for modern look
+To change colors, modify the CSS gradient and accent colors in each file's `<style>` section.
 
-## 📝 Legal Disclaimer
+## Files You Need
 
-The provided legal templates are basic examples. Consider:
-- Consulting with a lawyer for your specific jurisdiction
-- Reviewing GDPR requirements if you have EU users
-- Checking CCPA requirements if you have California users
-- Updating based on your app's specific data collection practices
+Don't forget to include:
+- `icon.png` - Your app icon (recommended: 512x512px or higher)
+- App Store badge is loaded from Apple's CDN automatically
 
-## 🔗 Example URLs
+## Contact Information
 
-After deployment, your URLs will be:
-- Landing page: `https://your-domain.com/`
-- Privacy Policy: `https://your-domain.com/policy.html`
-- Terms of Use: `https://your-domain.com/terms.html`
+All contact details default to:
+- Email: mail@ahmousavi.com
+- Address: Hauptstr. 4, 61276 Weilrod, Germany
+- Phone: +49 15753674255
 
-Use these URLs in your app's settings and store listings.
+Make sure to update these placeholders if your contact information differs.
